@@ -16,4 +16,4 @@ If the branch name is `acm-ucr/new-filter`, you can pull the branch's changes in
 git pull origin acm-ucr/new-filter
 ```
 
-NOTE: If you need to pull a remote branch, you will need to [fetch new branches](./branch)
+NOTE: If you need to pull a remote branch, you will need to [fetch new branches](/docusaurus/docs/git-version-control/branch)
