@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Utility classes
 
-> 💡 The [Tailwind docs](https://tailwindcss.com/docs/flex) have excellent explanations and diagrams on each utility class. 
+> 💡 The [Tailwind docs](https://tailwindcss.com/docs) have excellent explanations and diagrams on each utility class. 
 
 ## Centering a div with Tailwind utility classes
 
