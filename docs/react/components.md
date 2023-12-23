@@ -4,6 +4,8 @@ sidebar_position: 1
 
 # Components
 
+React components are code blocks representing UI elements. Every website has complex UI that can be broken down into smaller and reusable components. These components could be pages, buttons, navigation bar, etc.
+
 ## Creating a Component
 
 React components are written in `JSX` files. ACM @ UCR's naming convention requires `JSX` files to be in Pascal case. Components should also be named one word describing the component.

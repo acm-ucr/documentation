@@ -20,20 +20,12 @@ const First = () => {
 export default First;
 ```
 
-For exporting multiple things in a file, use `export` instead.
-
-```js title="/src/data/Data.js"
-export const LIST1 = [/*...*/]
-export const LIST2 = [/*...*/]
-```
-
 ## Importing
 
-Since we have exported the `First` component from the previous example, we can then import that component elsewhere in our code using the `import` binding. The first two lines of the code below is one way of importing modules. Anything exported with `export default` should not be wrapped in curly braces. Anything exported with `export` only should be wrapped in curly braces.
+Since we have exported the `First` component from the previous example, we can then import that component elsewhere in our code using the `import` binding. The first two lines of the code below is one way of importing modules.
 
 ```jsx title="/src/components/Another.jsx"
 import First from "@/components/Component.jsx";
-import { LIST1, LIST2 } from "@/data/Data.js";
 
 const Second = () => {
 	return (

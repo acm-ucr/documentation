@@ -25,7 +25,7 @@ export const PRODUCE = [
 ] 
 ```
 
-We can iterate through each produce objects using the `.map()` function. In the example below, we iterate and render each element in `PRODUCE`. The parameter of `map` method is a callback function taking in `(element, index)`. The function returns the code block displaying produce information. The parent tag of the map method must have a key attrbute.
+You can iterate through each produce objects using the `.map()` function. In the example below, we iterate and render each element in `PRODUCE`. The parameter of `map` method is a callback function taking in `(element, index)`. The function returns the code block displaying produce information. The parent tag of the map method must have a key attrbute.
 
 
 
@@ -33,31 +33,32 @@ We can iterate through each produce objects using the `.map()` function. In the 
 import { PRODUCE } from "@/data/Produce.js";
 
 const Grocery = () => {
-    return (
+    return(
         <>
-            PRODUCE.map((produce, index) => (
+            {PRODUCE.map((produce, index) => (
                 <div key={index}>
-                    Item: {produce.name}
-                    Price: {produce.price}
+                    <p>Item: {produce.name}</p>
+                    <p>Price: {produce.price}</p>
                 </div>
-            ));
+            ))}
+
         </>
     );
 }
 
-export default Grocery
+export default Grocery;
 ```
 ## Filtering
 
-The `filter` method is similar to the `map` method, however it will return a filtered list based on the given condition. The sample code below shows that `filter` will return a list of fruits. In order to render the items of fruits, we will need to map through the filtered `PRODUCE` list.
+The `filter` method is similar to the `map` method, however it will return a filtered list based on the given condition. The sample code below shows that `filter` will return a list of fruits. In order to render the items of fruits, you will need to map through the filtered `PRODUCE` list.
 
 ```jsx title="/src/components/Grocery.jsx"
-PRODUCE
+{PRODUCE
     .filter((produce) => produce.type === "Fruit")
     .map((produce, index) => (
         <div key={index}>
-            Item: {produce.name}
-            Price: {produce.price}
+            <p>Item: {produce.name}</p>
+            <p>Price: {produce.price}</p>
         </div>
-    ));
+))}
 ```

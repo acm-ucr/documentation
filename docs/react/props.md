@@ -8,15 +8,15 @@ Props in React is short for "properties". Props allow parent components to pass 
 
 ## Reading Props
 
-Components can read props by listing different properties and wrapped around curly brackets. In the example below, the properties passed in the Card component is `name`, `age`, and `state`. We can embed the props information using the curly brackets `{}`.
+Components can read props by listing different properties and wrapped around curly brackets. In the example below, the properties passed in the Card component is `name`, `age`, and `state`. You can embed the props information using the curly brackets `{}`.
 
 ```jsx title="/src/components/Card.jsx"
 const Card = ({ name, age, state }) => {
 	return (
 		<div>
-			<div>Name: {name}</div>
-            <div>Age: {age}</div>
-            <div>US State: {state}</div>
+			<p>Name: {name}</p>
+            <p>Age: {age}</p>
+            <p>US State: {state}</p>
 		</div>
 	)
 }
