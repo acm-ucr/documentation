@@ -41,7 +41,6 @@ const Grocery = () => {
                     <p>Price: {produce.price}</p>
                 </div>
             ))}
-
         </>
     );
 }
@@ -53,12 +52,18 @@ export default Grocery;
 The `filter` method is similar to the `map` method, however it will return a filtered list based on the given condition. The sample code below shows that `filter` will return a list of fruits. In order to render the items of fruits, you will need to map through the filtered `PRODUCE` list.
 
 ```jsx title="/src/components/Grocery.jsx"
-{PRODUCE
-    .filter((produce) => produce.type === "Fruit")
-    .map((produce, index) => (
-        <div key={index}>
-            <p>Item: {produce.name}</p>
-            <p>Price: {produce.price}</p>
-        </div>
-))}
+const Grocery = () => {
+    return(
+        <>
+            {PRODUCE
+                .filter((produce) => produce.type === "Fruit")
+                .map((produce, index) => (
+                    <div key={index}>
+                        <p>Item: {produce.name}</p>
+                        <p>Price: {produce.price}</p>
+                    </div>
+            ))}
+        </>
+    );
+}
 ```
