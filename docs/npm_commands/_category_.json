@@ -1,0 +1,8 @@
+{
+    "label": "NPM Commands",
+    "position": 4,
+    "link": {
+      "type": "generated-index",
+      "description": "A package manager for the Javascript runtime environment"
+    }
+  }
