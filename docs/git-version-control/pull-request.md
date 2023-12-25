@@ -14,6 +14,6 @@ Before submitting a pull request, your pull request must have the following item
 4. Screenshots of visual changes
 5. Appropriate labels (ie. ready for review, frontend, landing)
 
-If you are unable to provide any of the above items, please contact a team lead and they will be able to aid your further.
+If you are unable to provide any of the above items, please contact a team lead and they will be able to aid your further. Once your pull request is finalized, you can submit the pull request to the pull-request channel within the Discord server.
 
 An example of a properly formatted pull request can be accessed [here](https://github.com/acm-ucr/hackathon-website/pull/312).
