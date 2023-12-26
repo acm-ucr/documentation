@@ -19,9 +19,17 @@ Here is how you would add utility classes to a **parent div** to center its **ch
 
 The `flex` class applies flexbox to the container. Flexbox allows containers to stretch and change order and orientation of their child containers. See [this link](https://tailwindcss.com/docs/flex) for a visualization of flexbox in Tailwind. The other two classes **only work when flex is applied**. 
 
-`items-center` centers the child div within the parent div **vertically**.
+`items-center` centers the child div within the parent div **on its cross axis**. By default, flexbox applies `flex-row` (as opposed to `flex-col`, More on [flex-row and flex-col](#nesting-containers-inside-each-other) later). the `flex-row` axes look like this. 
 
-  `justify-center` centers the child div within the parent div **horizontally**
+ ![Cross axis and main axis](fsln7je4ax7ft3er28hh.png)
+
+As you can see, `items-center` centers on the cross-axis, so the child is centered **vertically**.
+
+
+  `justify-center` centers the child div within the parent div **on its main axis**. The parent is `flex-row` and not `flex-col` ([difference](#nesting-containers-inside-each-other)), so the child is centered horizontally. 
+
+
+ 
 
 ## Adding spacing around a container
 
