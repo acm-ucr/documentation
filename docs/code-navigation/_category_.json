@@ -1,0 +1,8 @@
+{
+	"label": "Navigate Code Base",
+	"position": 3,
+	"link": {
+		"type": "generated-index",
+		"description": "How to navigate code base with VS Code"
+	}
+}
